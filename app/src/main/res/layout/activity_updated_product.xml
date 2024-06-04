@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hitam222"
+                    android:textSize="34dp"
+                    android:text="Update Product"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="4dp"
+                            android:background="@color/white">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etNameProductUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Name"
+                                android:textColor="@color/hitam222"
+                                android:layout_gravity="center"
+                                android:background="@color/white"
+                                android:inputType="textNoSuggestions"
+                                android:imeOptions="actionNext"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="4dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:hint="Brand"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etBrandProductUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/hitam222"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:inputType="textNoSuggestions"
+                        android:imeOptions="actionNext"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="4dp"
+                            android:background="@color/white"
+                            android:layout_marginTop="10dp"
+                            android:hint="Price"
+                            >
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etPriceProductUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/hitam222"
+                                android:layout_gravity="center"
+                                android:background="@color/white"
+                                android:inputType="number"
+                                android:imeOptions="actionDone"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/ProgressUpdateProduct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:indeterminate="true"
+                        android:indeterminateDrawable="@drawable/progress_bar_bg"
+                        android:progress="0"
+                        android:visibility="gone"
+                        android:layout_marginLeft="170dp"
+                        tools:visibility="visible"
+                        />
+
+                </FrameLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="4dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:hint="Deskripsi"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etDeskripsiProductUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/hitam222"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:inputType="textLongMessage"
+                        android:imeOptions="actionDone"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:elevation="4dp"
+                    android:background="@color/white"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerCategoryUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:elevation="4dp"
+                    android:background="@color/white"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerSubCategoryUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewUpdateProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:background="@color/white"
+                        android:contentDescription="Product Image 1"/>
+
+                    <Button
+                        android:id="@+id/buttonSelectImageUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/primary"
+                        android:text="Select Images"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg"
+                android:orientation="vertical"
+                android:paddingVertical="30dp">
+
+                <Button
+                    android:id="@+id/btnUpdateProduct"
+                    android:layout_width="343dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/primary"
+                    android:fontFamily="@font/tt_norms_regular"
+                    android:text="UPDATE"
+                    android:textSize="14dp"
+                    android:textStyle="bold">
+
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

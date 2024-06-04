@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="50dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="LIST OF PRODUCTS"
+                    android:fontFamily="@font/tt_norms_bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/hitam222">
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/addProductByAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_add_24">
+                </ImageView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewLOP"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/activity_list_of_products"
+                    android:layout_gravity="center"
+                    >
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/abu2"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingVertical="10dp"
+        android:background="@color/hitam222"
+        >
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="5dp"
+            >
+            <TextView
+                android:id="@+id/listOfUsersEmail"
+                android:layout_width="171dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/tt_norms_regular"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="New"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/listOfUsersName"
+                android:layout_width="171dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/tt_norms_regular"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="New"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_edit_24">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_delete_24">
+            </ImageView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

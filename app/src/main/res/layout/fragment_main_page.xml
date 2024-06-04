@@ -1,0 +1,246 @@
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.main_page.MainPageFragment"
+    android:background="@color/white"
+    >
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bannerImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/big_banner"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="330dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="296dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/tt_norms_black"
+                            android:text="Fashion"
+                            android:textColor="@color/white"
+                            android:textSize="53dp"
+                            android:textStyle="bold"
+                            >
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="296dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/tt_norms_black"
+                            android:text="sale"
+                            android:textColor="@color/white"
+                            android:textSize="53dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-15dp"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/primary"
+                        android:text="Check"
+                        android:fontFamily="@font/tt_norms_regular"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        >
+                    </Button>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="23dp"
+                android:paddingLeft="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New"
+                        android:textColor="@color/hitam222"
+                        android:textSize="39dp"
+                        android:fontFamily="@font/tt_norms_bold"
+                        android:textStyle="bold"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="You've never seen it before!"
+                        android:fontFamily="@font/tt_norms_regular"
+                        android:textColor="@color/abu"
+                        android:textSize="16dp"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View all"
+                    android:textColor="@color/hitam222"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/tt_norms_regular"
+                    android:paddingTop="15dp"
+                    android:gravity="right"
+                    android:paddingRight="15dp"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/activity_list_sales"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/ProgressBarMainPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/progress_bar_bg"
+                    android:progress="0"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80dp"
+                    tools:visibility="visible"
+                    />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/activity_list_sales"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/ProgressBarMainPage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/progress_bar_bg"
+                    android:progress="0"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80dp"
+                    tools:visibility="visible"
+                    />
+
+
+            </FrameLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="1000dp">
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>

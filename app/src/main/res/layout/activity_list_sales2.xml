@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/imgSales2"
+                android:layout_width="125dp"
+                android:layout_height="184dp"
+                android:layout_gravity="left"
+                >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rating_5_stars"
+                android:layout_gravity="left"
+                >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/nameProduct2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:fontFamily="@font/tt_norms_bold"
+                android:textSize="18dp"
+                android:textColor="@color/hitam222"
+                android:textStyle="bold"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:fontFamily="@font/tt_norms_bold"
+                android:textSize="13dp"
+                android:textColor="@color/primary"
+                >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="100dp"
+            >
+
+            <ImageView
+                android:id="@+id/background_love"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/background_love"
+                >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/loveImg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-32dp"
+                android:src="@drawable/love_selector"
+
+                ></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sale_label"
+                android:layout_marginRight="120dp"
+                android:layout_marginTop="10dp"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="-20%"
+                android:fontFamily="@font/tt_norms_bold"
+                android:textSize="11dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="26dp"
+                >
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

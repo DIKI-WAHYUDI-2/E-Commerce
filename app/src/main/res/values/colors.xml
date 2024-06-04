@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_bg">#F9F9F9</color>
+    <color name="teks_depan">#9B9B9B</color>
+    <color name="hitam222">#222222</color>
+    <color name="primary">#DB3022</color>
+    <color name="merah">#FF6347</color>
+    <color name="abu">#9B9B9B</color>
+    <color name="abu2">#f5f5f5</color>
+</resources>

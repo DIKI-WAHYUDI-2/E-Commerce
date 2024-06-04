@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="10dp"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@color/abu2"
+                >
+                <ImageView
+                    android:id="@+id/imgListCatalog"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:src="@drawable/shirt_2_2">
+                </ImageView>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/nameListCatalog"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="Regular Fit Embroidery shirt"
+                                android:fontFamily="@font/tt_norms_bold"
+                                android:textColor="@color/hitam222"
+                                android:textSize="14dp"
+                                >
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/brandListCatalog"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mango"
+                                android:fontFamily="@font/tt_norms_regular"
+                                android:textColor="@color/abu"
+                                android:textSize="11dp"
+                                android:paddingVertical="2dp"
+                                >
+                            </TextView>
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rating_5_stars"
+                                android:layout_gravity="left"
+                                android:paddingVertical="2dp"
+                                >
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/priceListCatalog"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp100.000"
+                                android:textColor="@color/hitam222"
+                                android:fontFamily="@font/tt_norms_regular"
+                                android:textSize="13dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/background_love"
+                            android:paddingLeft="180dp"
+                            android:layout_marginTop="-1dp"
+                            >
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/love_selector"
+                            android:paddingLeft="180dp"
+                            android:layout_marginTop="14dp">
+                        </ImageView>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

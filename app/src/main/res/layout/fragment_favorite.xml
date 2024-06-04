@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorites"
+            android:fontFamily="@font/tt_norms_bold"
+            android:textSize="34dp"
+            android:textColor="@color/hitam222">
+        </TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            >
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/hitam222"
+                android:text="T-shirt"
+                android:textColor="@color/white"
+                android:fontFamily="@font/tt_norms_regular"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginHorizontal="5dp"
+                >
+            </Button>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/hitam222"
+                android:text="Crop tops"
+                android:textColor="@color/white"
+                android:fontFamily="@font/tt_norms_regular"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginHorizontal="5dp"
+                >
+            </Button>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/hitam222"
+                android:text="Sleeveless"
+                android:textColor="@color/white"
+                android:fontFamily="@font/tt_norms_regular"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginHorizontal="5dp"
+                >
+            </Button>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/hitam222"
+                android:text="Shirt"
+                android:textColor="@color/white"
+                android:fontFamily="@font/tt_norms_regular"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginHorizontal="5dp"
+                >
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/abu2"
+        >
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filters"
+                android:fontFamily="@font/tt_norms_regular"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/hitam222"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="-4dp"
+                >
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sort_by"
+                android:layout_marginRight="-10dp"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: lowest to high"
+                android:fontFamily="@font/tt_norms_regular"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/hitam222"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/view_modules">
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/activity_list_catalog"
+            android:layout_gravity="center"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

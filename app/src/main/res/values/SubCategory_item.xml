@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subcategory_array">
+        <item>T-Shirt</item>
+        <item>Shirt</item>
+        <item>Shoes</item>
+        <item>Bag</item>
+        <item>Jeans</item>
+    </string-array>
+</resources>
